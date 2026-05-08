@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Maple-Blest Suzhou Process Portfolio</title>
+    <link href="assets/css/site.css" rel="stylesheet"/>
+    <style>
+        /* 你提供的样式：行间距与Logo */
+        .merged-sections-list li {
+            line-height: 2.2;
+            margin-bottom: 15px;
+        }
+        .brand-logo-img {
+            height: 32px;
+            width: auto;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        /* 需求1：去掉时间轴卡片上的小圆圈 */
+        .timeline-card::before {
+            display: none !important;
+            content: none !important;
+        }
+
+        /* 保持你的日期样式：在序号下方且下移 */
+        .timeline-step {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3px;
+            padding-top: 4px !important;
+        }
+        .timeline-date {
+            font-size: 1em;
+            color: #666;
+            font-weight: 700 !important;
+            margin: 0 !important;
+            position: static;
+        }
+    </style>
+</head>
+<body data-page="index">
+<div class="site-shell">
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a aria-label="Maple-blest Suzhou Process Portfolio home" class="brand" href="index.html">
+                <img src="208logo.png" alt="Logo" style="height: 42px; margin-right: 10px;">
+                <span class="brand-text"><strong>Maple-blest Suzhou</strong><span>Process Portfolio</span></span>
+            </a>
+            <button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" type="button">Menu</button>
+            <nav aria-label="Primary" class="site-nav" id="site-nav">
+                <a data-page="index" href="index.html">Overview</a>
+                <a data-page="research" href="research.html">Research</a>
+                <a data-page="requirements" href="requirements.html">Requirements</a>
+                <a data-page="ideation" href="ideation.html">Ideation</a>
+                <a data-page="implementation" href="implementation.html">Implementation</a>
+                <a data-page="evaluation" href="evaluation.html">Evaluation</a>
+                <a data-page="team" href="team.html">Team</a>
+                <a data-page="references" href="references.html">References</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero page-hero-home">
+            <div aria-hidden="true" class="hero-media"></div>
+            <div class="container hero-content">
+                <div class="hero-copy">
+                    <p class="eyebrow">CPT208 Process Portfolio Hub</p>
+                    <h1>Maple-blest Suzhou process portfolio, organized around source evidence.</h1>
+                    <p class="hero-lead">This website is a coursework process portfolio for the CPT208 Human-Centric Computing Maple-blest Suzhou project.</p>
+                </div>
+                <aside class="hero-panel callout-card">
+                    <p class="callout-label">Project Overview</p>
+                    <h2>The project responds to visitor barriers at Suzhou Grand Canal – Maple Bridge.</h2>
+                    <p>We have chosen A2, Suzhou Grand Cannel – Maple Bridge, since enormous visitor is probable to meet some barriers. For instance, first-time tourists lack of comprehension regarding popular photo spots; Older adults getting lost and language issues for international visitors.</p>
+
+
+                    <p>    To address this issue, the project adopts a web-based online interactive platform with playful micro-interactions.</p>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <article class="editorial-block">
+                    <div class="section-heading">
+                        <p class="eyebrow">Project Scope</p>
+                        <h2>Portfolio Sections</h2>
+                    </div>
+                    <ul class="checklist merged-sections-list">
+                        <li>Motivation & Research：The Why, The Gap, The Stakeholders.</li>
+                        <li>User Requirements : User Journey Map, Requirements List, Evidence of Life.</li>
+                        <li>Ideation & Alternatives: The “Crazy Eights”, Design Alternatives, Low-Fi Prototype.</li>
+                        <li>Technical Implementation: System Architecture, High-Fi Prototype, Individual Contributions.</li>
+                        <li>Evaluation & Reflection: Usability Testing, Iterative Refinement, Final Reflection.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Process Timeline</p>
+                    <h2>A coherent path through the existing project files.</h2>
+                </div>
+                <div class="timeline-grid">
+                    <article class="timeline-card">
+                        <span class="timeline-step">01 <span class="timeline-date">4.8</span></span>
+                        <h3>Research</h3>
+                        <p>Motivation draft and gap document establish the problem framing.</p>
+                    </article>
+                    <article class="timeline-card">
+                        <span class="timeline-step">02 <span class="timeline-date">4.13</span></span>
+                        <h3>Requirements</h3>
+                        <p>Interview media, persona PDF, and journey maps provide visible evidence.</p>
+                    </article>
+                    <article class="timeline-card">
+                        <span class="timeline-step">03 <span class="timeline-date">4.16</span></span>
+                        <h3>Ideation</h3>
+                        <p>Crazy Eights and alternative comparison show how candidate structures were explored.</p>
+                    </article>
+                    <article class="timeline-card">
+                        <span class="timeline-step">04 <span class="timeline-date">4.23</span></span>
+                        <h3>Implementation</h3>
+                        <p>System architecture text and PDF describe a static multi-page frontend model.</p>
+                    </article>
+                    <article class="timeline-card">
+                        <span class="timeline-step">05 <span class="timeline-date">4.29</span></span>
+                        <h3>Evaluation</h3>
+                        <p>Process PBIs record concrete refinement tasks.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-layout">
+            <div>
+                <p class="footer-title">Maple-blest Suzhou Process Portfolio</p>
+                <p class="footer-copy">A static CPT208 companion site for documenting process, evidence, and reflection.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
